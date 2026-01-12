@@ -54,28 +54,3 @@ has_permission = {
     "Customer Portal Profile": "customer_portal_manager.api.portal_api.has_profile_permission",
     "Customer Portal User": "customer_portal_manager.api.portal_api.has_user_permission"
 }
-
-# Scheduled Tasks
-# ----------------
-# scheduler_events = {}
-
-# Override Methods
-# -----------------
-# override_whitelisted_methods = {}
-
-# Jinja Methods
-# --------------
-# jinja = {}
-
-# Installation
-# -------------
-# before_install = "customer_portal_manager.install.before_install"
-# after_install = "customer_portal_manager.install.after_install"
-
-# Desk Notifications
-# -------------------
-# notification_config = "customer_portal_manager.notifications.get_notification_config"
-
-# Website Route Rules
-# --------------------
-# website_route_rules = []

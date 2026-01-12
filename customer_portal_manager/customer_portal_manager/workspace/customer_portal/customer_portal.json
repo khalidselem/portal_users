@@ -1,0 +1,60 @@
+{
+    "charts": [],
+    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Customer Portal</b></span>\",\"col\":12}}]",
+    "creation": "2026-01-12 10:00:00.000000",
+    "docstatus": 0,
+    "doctype": "Workspace",
+    "icon": "users",
+    "label": "Customer Portal",
+    "links": [
+        {
+            "label": "Management",
+            "link_to": "customer-portal-management",
+            "link_type": "Page",
+            "onboard": 1,
+            "type": "Link"
+        },
+        {
+            "label": "Customer Portal Profile",
+            "link_to": "Customer Portal Profile",
+            "link_type": "DocType",
+            "type": "Link"
+        },
+        {
+            "label": "Customer Portal User",
+            "link_to": "Customer Portal User",
+            "link_type": "DocType",
+            "type": "Link"
+        }
+    ],
+    "modified": "2026-01-12 10:00:00.000000",
+    "module": "Customer Portal Manager",
+    "name": "Customer Portal",
+    "public": 1,
+    "roles": [
+        {
+            "role": "Customer Portal Admin"
+        },
+        {
+            "role": "System Manager"
+        }
+    ],
+    "shortcuts": [
+        {
+            "label": "Customer Portal Management",
+            "link_to": "customer-portal-management",
+            "type": "Page"
+        },
+        {
+            "label": "Customer Portal Profile",
+            "link_to": "Customer Portal Profile",
+            "type": "DocType"
+        },
+        {
+            "label": "Customer Portal User",
+            "link_to": "Customer Portal User",
+            "type": "DocType"
+        }
+    ],
+    "title": "Customer Portal"
+}
