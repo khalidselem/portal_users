@@ -40,6 +40,22 @@ class CustomerPortalManagement {
             () => this.load_data(),
             'fa fa-refresh'
         );
+
+        this.page.add_inner_button(__('Generate Demo Data'), () => {
+            frappe.confirm(__('Are you sure you want to generate demo data? This will create sample customers and users.'), () => {
+                frappe.call({
+                    method: 'customer_portal_manager.api.portal_api.generate_demo_data',
+                    freeze: true,
+                    freeze_message: __('Generating Demo Data...'),
+                    callback: (r) => {
+                        if (r.message) {
+                            frappe.msgprint(r.message.message);
+                            this.load_data();
+                        }
+                    }
+                });
+            });
+        });
     }
 
     render_layout() {

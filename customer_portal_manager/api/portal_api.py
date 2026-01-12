@@ -10,7 +10,18 @@ This module provides API endpoints for:
 
 import frappe
 from frappe import _
+from customer_portal_manager.customer_portal_manager.demo_data import execute as generate_demo_data_script
 
+# ... existing code ...
+
+@frappe.whitelist()
+def generate_demo_data():
+    """Generate demo data for the app."""
+    if not is_portal_admin():
+        frappe.throw(_("Only Admins can generate demo data"), frappe.PermissionError)
+    
+    generate_demo_data_script()
+    return {"message": _("Demo data generated successfully")}
 
 # =============================================================================
 # Permission Query Conditions (for hooks.py)
