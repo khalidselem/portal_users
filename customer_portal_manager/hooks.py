@@ -5,9 +5,10 @@ Defines app metadata, permissions, and custom configurations.
 
 app_name = "customer_portal_manager"
 app_title = "Customer Portal Manager"
-app_publisher = "Your Company"
+app_publisher = "ITQAN LLC"
 app_description = "Single-screen management portal for customer users with company branding"
-app_email = "info@yourcompany.com"
+app_email = "info@itqan-kw.net"
+app_website = "itqan-kw.com"
 app_license = "MIT"
 required_apps = ["frappe", "erpnext"]
 
