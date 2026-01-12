@@ -1,0 +1,2 @@
+# Patches for Customer Portal Manager
+# Add patch entries here as: customer_portal_manager.patches.patch_name

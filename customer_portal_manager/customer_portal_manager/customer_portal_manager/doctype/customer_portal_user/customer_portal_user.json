@@ -1,0 +1,136 @@
+{
+    "actions": [],
+    "autoname": "format:{customer}-{user}",
+    "creation": "2026-01-12 10:00:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "customer_section",
+        "customer",
+        "portal_profile",
+        "column_break_1",
+        "user",
+        "role",
+        "user_details_section",
+        "start_date",
+        "column_break_2",
+        "enabled",
+        "modules_section",
+        "modules"
+    ],
+    "fields": [
+        {
+            "fieldname": "customer_section",
+            "fieldtype": "Section Break",
+            "label": "Customer Information"
+        },
+        {
+            "fieldname": "customer",
+            "fieldtype": "Link",
+            "in_list_view": 1,
+            "in_standard_filter": 1,
+            "label": "Customer",
+            "options": "Customer",
+            "reqd": 1
+        },
+        {
+            "fieldname": "portal_profile",
+            "fieldtype": "Link",
+            "in_list_view": 1,
+            "label": "Portal Profile",
+            "options": "Customer Portal Profile"
+        },
+        {
+            "fieldname": "column_break_1",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "user",
+            "fieldtype": "Link",
+            "in_list_view": 1,
+            "in_standard_filter": 1,
+            "label": "User",
+            "options": "User",
+            "reqd": 1
+        },
+        {
+            "fieldname": "role",
+            "fieldtype": "Link",
+            "in_list_view": 1,
+            "label": "Role",
+            "options": "Role"
+        },
+        {
+            "fieldname": "user_details_section",
+            "fieldtype": "Section Break",
+            "label": "User Details"
+        },
+        {
+            "default": "Today",
+            "fieldname": "start_date",
+            "fieldtype": "Date",
+            "in_list_view": 1,
+            "label": "Start Date"
+        },
+        {
+            "fieldname": "column_break_2",
+            "fieldtype": "Column Break"
+        },
+        {
+            "default": "1",
+            "fieldname": "enabled",
+            "fieldtype": "Check",
+            "in_list_view": 1,
+            "in_standard_filter": 1,
+            "label": "Enabled"
+        },
+        {
+            "fieldname": "modules_section",
+            "fieldtype": "Section Break",
+            "label": "Assigned Modules"
+        },
+        {
+            "fieldname": "modules",
+            "fieldtype": "Table",
+            "label": "Modules",
+            "options": "Customer Portal Module"
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2026-01-12 10:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "Customer Portal Manager",
+    "name": "Customer Portal User",
+    "naming_rule": "Expression",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "Customer Portal Admin",
+            "share": 1,
+            "write": 1
+        },
+        {
+            "email": 0,
+            "export": 0,
+            "print": 0,
+            "read": 1,
+            "report": 0,
+            "role": "Customer Portal User",
+            "share": 0,
+            "write": 0
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "track_changes": 1
+}

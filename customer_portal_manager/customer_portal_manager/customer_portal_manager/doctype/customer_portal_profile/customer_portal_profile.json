@@ -1,0 +1,126 @@
+{
+    "actions": [],
+    "autoname": "field:customer",
+    "creation": "2026-01-12 10:00:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "company_section",
+        "customer",
+        "company_name",
+        "column_break_1",
+        "company_logo",
+        "enabled",
+        "commercial_section",
+        "commercial_number",
+        "column_break_2",
+        "tax_id"
+    ],
+    "fields": [
+        {
+            "fieldname": "company_section",
+            "fieldtype": "Section Break",
+            "label": "Company Information"
+        },
+        {
+            "fieldname": "customer",
+            "fieldtype": "Link",
+            "in_list_view": 1,
+            "in_standard_filter": 1,
+            "label": "Customer",
+            "options": "Customer",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "company_name",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "Company Name",
+            "reqd": 1
+        },
+        {
+            "fieldname": "column_break_1",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "company_logo",
+            "fieldtype": "Attach Image",
+            "label": "Company Logo"
+        },
+        {
+            "default": "1",
+            "fieldname": "enabled",
+            "fieldtype": "Check",
+            "in_list_view": 1,
+            "label": "Enabled"
+        },
+        {
+            "fieldname": "commercial_section",
+            "fieldtype": "Section Break",
+            "label": "Commercial & Legal Information"
+        },
+        {
+            "fieldname": "commercial_number",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "Commercial Registration Number"
+        },
+        {
+            "fieldname": "column_break_2",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "tax_id",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "Tax ID / VAT Number"
+        }
+    ],
+    "image_field": "company_logo",
+    "index_web_pages_for_search": 1,
+    "links": [
+        {
+            "group": "Users",
+            "link_doctype": "Customer Portal User",
+            "link_fieldname": "portal_profile"
+        }
+    ],
+    "modified": "2026-01-12 10:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "Customer Portal Manager",
+    "name": "Customer Portal Profile",
+    "naming_rule": "By fieldname",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "Customer Portal Admin",
+            "share": 1,
+            "write": 1
+        },
+        {
+            "email": 0,
+            "export": 0,
+            "print": 1,
+            "read": 1,
+            "report": 0,
+            "role": "Customer Portal User",
+            "share": 0,
+            "write": 0
+        }
+    ],
+    "show_title_field_in_link": 1,
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "title_field": "company_name",
+    "track_changes": 1
+}

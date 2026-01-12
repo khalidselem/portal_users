@@ -1,0 +1,2 @@
+# Requirements for customer_portal_manager
+# frappe is not listed here as it's the base framework

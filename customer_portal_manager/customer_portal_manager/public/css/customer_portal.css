@@ -1,0 +1,33 @@
+/**
+ * Customer Portal Manager - Global Styles
+ * This file is loaded globally via hooks.py app_include_css
+ */
+
+/* Custom workspace icon styling */
+.workspace-icon.customer-portal-icon {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Custom list view styles for portal doctypes */
+.frappe-list[data-doctype="Customer Portal Profile"] .list-row,
+.frappe-list[data-doctype="Customer Portal User"] .list-row {
+    transition: all 0.2s ease;
+}
+
+.frappe-list[data-doctype="Customer Portal Profile"] .list-row:hover,
+.frappe-list[data-doctype="Customer Portal User"] .list-row:hover {
+    background-color: rgba(102, 126, 234, 0.05);
+}
+
+/* Custom form styles */
+[data-doctype="Customer Portal Profile"] .form-layout,
+[data-doctype="Customer Portal User"] .form-layout {
+    max-width: 900px;
+}
+
+/* Company logo preview in form */
+[data-doctype="Customer Portal Profile"] [data-fieldname="company_logo"] .attached-file-link img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
